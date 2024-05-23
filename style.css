@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkgrey: #20232f;
+    --darkred: #5d2221;
+    --blue: #46d9e6;
+}
+
+body {
+    background-color: var(--darkgrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form {
+    margin-top: 1rem;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+.error_text {
+    color: #d93025;
+    font-size: 14.5px;
+    margin: -5px 5px 10px;
+    display: none;
+}
+
+input {
+    width: 100%;
+    background-color: #20232f;
+    border: 2px solid var(--darkred);
+    border-radius: .5rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+.input_one {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.input_one .input_name,
+.input_email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.input_two {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.input_two .input_tel,
+.input_subject {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.input_message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.message {
+    width: 100%;
+    height: 300px;
+    border: 2px solid var(--darkred);
+    background-color: var(--darkgrey);
+    padding: 1rem;
+    resize: none;
+    color: #fff;
+}
+
+.message::placeholder {
+    font-size: medium;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+button {
+    color: #20232f;
+    background-color: var(--blue);
+    border: none;
+    padding: 1.5rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    line-height: .3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+textarea:focus,
+input:focus {
+    outline: 1px solid var(--blue);
+}
+
+textarea:focus,
+input:focus {
+    color: #fff;
+}
+
+.success {
+    position: absolute;
+    top: 20%;
+    width: 500px;
+    height: 300px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    color: #20232f;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.success.active {
+    display: flex;
+}
+
+.success span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #46d9e6;
+    border-radius: 100%;
+    color: #fff;
+}
+
+.success h2 {
+    font-family: 'Times New Roman', Times, serif;
+}

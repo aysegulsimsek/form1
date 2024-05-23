@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- XALHE5PG8EUSAD5JT98FAPBK -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js
+"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css
+" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Me!</h1>
+        <form name="form1" action="#" id="contactForm" onsubmit="return dogrula()">
+            <div class="input_one">
+                <div class="input_name">
+                    <input name="fullname" id="name" type="text" placeholder="Full Name" autocomplete="off">
+                    <div class="error_text">Full Name can't be blank</div>
+                </div>
+                <div class="input_email">
+                    <input name="email" id="email" type="email" placeholder="Email Address" autocomplete="off">
+                    <div class="error_text">Email Adress can't be blank</div>
+                </div>
+            </div>
+
+            <div class="input_two">
+                <div class="input_tel">
+                    <input name="tel" id="tel" type="tel" placeholder="Phone Number" autocomplete="off">
+                    <div class="error_text">Phone Number can't be blank</div>
+                </div>
+                <div class="input_subject">
+                    <input name="subject" id="subject" type="text" placeholder="Subject" autocomplete="off">
+                    <div class="error_text">Subject can't be blank</div>
+                </div>
+            </div>
+            <div class="input_message">
+                <textarea name="message" id="message" class="message" placeholder="Your Message" autocomplete="off"></textarea>
+                <div class="error_text">Your Message can't be blank</div>
+            </div>
+            <button type="submit" onclick="sendEmail()">Send Message</button>
+        </form>
+        <div class="success">
+            <span><i class="fa-solid fa-check"></i></span>
+            <h2>Email succesfully sending.</h2>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "J1qDxZzas-tKyWSfp",
+            });
+        })();
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
